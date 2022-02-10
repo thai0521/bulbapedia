@@ -1,4 +1,4 @@
-export class ButtonItemModel {
+export class BulbItemModel {
     img:string;
     name:string;
 

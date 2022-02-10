@@ -1,4 +1,4 @@
-export const mock_button_list =[
+export const mock_bulb_list =[
    { 
        img:"/assets/home.webp", 
        name:"Home"
