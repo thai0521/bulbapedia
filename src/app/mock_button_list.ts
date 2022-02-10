@@ -1,0 +1,27 @@
+export const mock_button_list =[
+   { 
+       img:"/assets/home.webp", 
+       name:"Home"
+},{ 
+    img:"/assets/forums.webp", 
+    name:"Forums"
+},{ 
+    img:"/assets/bulbapedia_logo.webp", 
+    name:"Bulbapedia"
+},{ 
+    img:"/assets/archives.webp", 
+    name:"Archives"
+},{ 
+    img:"/assets/bulbanews.webp", 
+    name:"Bulbanews"
+},{ 
+    img:"/assets/bulbacast.webp", 
+    name:"Bulbacast"
+},{ 
+    img:"/assets/handbooks.webp", 
+    name:"Handbooks"
+},{ 
+    img:"/assets/discord.webp", 
+    name:"Discord"
+}
+];

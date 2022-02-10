@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, Input } from "@angular/core";
 
 @Component({
     selector: 'bp-card',
@@ -6,5 +6,14 @@ import { Component } from "@angular/core";
     styleUrls: ['card.component.css'] 
 })
 export class CardComponent{
+    @Input()
+    img: string;
+    @Input()
+    name: string;
 
+
+    constructor(){
+        this.img ="";
+        this.name= "missing description";
+    }
 }

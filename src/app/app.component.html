@@ -6,5 +6,12 @@ Welcome to Bulbapedia!
 
 <bp-buttonGroup>Loading...</bp-buttonGroup>
 
-<bp-card>Loading...</bp-card>
+<div class ="container-fluid d-flex">
+    <div *ngFor="let button of buttons">
+        <bp-card class="mx-2" img={{button.img}} name={{button.name}}>
+            Loading...
+        </bp-card>
+    </div>
+</div>
+
 <bp-footer>Loading...<bp-footer></bp-footer>
