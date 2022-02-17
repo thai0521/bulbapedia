@@ -5,6 +5,12 @@ import {FooterComponent} from './footer/footer.component';
 import { AppComponent } from './app.component';
 import { CardComponent } from './card/card.component';
 import{ButtonGroupComponent} from './buttonGroup/buttonGroup.component';
+import { AppRoutingModule } from './app-routing.module';
+import { ViewSourceLayoutComponent } from './buttonGroup/view-source-layout.component';
+import { HomeLayoutComponent } from './buttonGroup/home-layout.component';
+import { DiscussionLayoutComponent } from './buttonGroup/discussion-layout.component';
+import { HistoryLayoutComponent } from './buttonGroup/history-layout.component';
+import { ToolsLayoutComponent } from './buttonGroup/tools-layout.component';
 
 @NgModule({
   declarations: [
@@ -12,11 +18,17 @@ import{ButtonGroupComponent} from './buttonGroup/buttonGroup.component';
     HeaderComponent,
     FooterComponent,
     CardComponent,
-    ButtonGroupComponent
+    ButtonGroupComponent,
+    ViewSourceLayoutComponent,
+    HomeLayoutComponent,
+    DiscussionLayoutComponent,
+    HistoryLayoutComponent,
+    ToolsLayoutComponent
 
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

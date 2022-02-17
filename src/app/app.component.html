@@ -1,17 +1,11 @@
 <bp-header>Loading...</bp-header>
 
+
 <p>
 Welcome to Bulbapedia!
 </p>
 
 <bp-buttonGroup>Loading...</bp-buttonGroup>
-
-<div class ="container-fluid d-flex">
-    <div *ngFor="let bulb of bulbs">
-        <bp-card class="mx-2" img={{bulb.img}} name={{bulb.name}}>
-            Loading...
-        </bp-card>
-    </div>
-</div>
+<router-outlet></router-outlet>
 
 <bp-footer>Loading...<bp-footer></bp-footer>

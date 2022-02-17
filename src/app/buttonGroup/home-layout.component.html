@@ -1,0 +1,16 @@
+<div class="container-fluid">
+    <div class="row">
+
+        <div class="col-2"></div>
+        <div class="col-8">
+            <div class="row">
+                <div class="col-1" *ngFor="let bulb of bulbs">
+                    <bp-card class="mx-2" img={{bulb.img}} name={{bulb.name}}>
+                        Loading...
+                    </bp-card>
+                </div>
+            </div>
+        </div>
+        <div class="col-2"></div>
+    </div>
+</div>
