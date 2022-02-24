@@ -7,6 +7,7 @@ import { DiscussionLayoutComponent } from './buttonGroup/discussion-layout.compo
 import { HistoryLayoutComponent } from './buttonGroup/history-layout.component';
 import { ToolsLayoutComponent } from './buttonGroup/tools-layout.component';
 import { ArchivesLayoutComponent } from './card/archives-layout.component';
+import { BulbaCastLayoutComponent } from './card/bulbacast.-layout.component';
 
 const routes: Routes = [
   {path: '', component:HomeLayoutComponent},
@@ -15,7 +16,8 @@ const routes: Routes = [
   {path: 'discussion', component: DiscussionLayoutComponent},
   {path: 'history', component: HistoryLayoutComponent},
   {path: 'tools', component:ToolsLayoutComponent},
-  {path: 'archives', component:ArchivesLayoutComponent}
+  {path: 'archives', component:ArchivesLayoutComponent},
+  {path: 'bulbacast', component:BulbaCastLayoutComponent}
 ];
 
 @NgModule({

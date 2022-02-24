@@ -24,7 +24,7 @@ export const mock_bulb_list =[
 },{ 
     img:"/assets/bulbacast.webp", 
     name:"Bulbacast",
-    link:"home"
+    link:"bulbacast"
 },{ 
     img:"/assets/handbooks.webp", 
     name:"Handbooks",

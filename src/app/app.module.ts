@@ -12,7 +12,9 @@ import { DiscussionLayoutComponent } from './buttonGroup/discussion-layout.compo
 import { HistoryLayoutComponent } from './buttonGroup/history-layout.component';
 import { ToolsLayoutComponent } from './buttonGroup/tools-layout.component';
 import { ArchivesLayoutComponent } from './card/archives-layout.component';
-import { TitleCardComponent } from './titleCard.component';
+import { ArchivesCardComponent } from './archivesCard.component';
+import { BulbaCastLayoutComponent } from './card/bulbacast.-layout.component';
+import { BulbacastCardComponent } from './bulbacastCard.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { TitleCardComponent } from './titleCard.component';
     HistoryLayoutComponent,
     ToolsLayoutComponent,
     ArchivesLayoutComponent,
-    TitleCardComponent
+    ArchivesCardComponent,
+    BulbaCastLayoutComponent,
+    BulbacastCardComponent
 
   ],
   imports: [
