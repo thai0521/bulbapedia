@@ -1,27 +1,37 @@
+import { RouterLink } from "@angular/router";
+
 export const mock_bulb_list =[
    { 
        img:"/assets/home.webp", 
-       name:"Home"
+       name:"Home",
+       link:"home"
 },{ 
     img:"/assets/forums.webp", 
-    name:"Forums"
+    name:"Forums",
+    link:"home"
 },{ 
     img:"/assets/bulbapedia_logo.webp", 
-    name:"Bulbapedia"
+    name:"Bulbapedia",
+    link:"home"
 },{ 
     img:"/assets/archives.webp", 
-    name:"Archives"
+    name:"Archives",
+    link:"archives"
 },{ 
     img:"/assets/bulbanews.webp", 
-    name:"Bulbanews"
+    name:"Bulbanews",
+    link:"home"
 },{ 
     img:"/assets/bulbacast.webp", 
-    name:"Bulbacast"
+    name:"Bulbacast",
+    link:"home"
 },{ 
     img:"/assets/handbooks.webp", 
-    name:"Handbooks"
+    name:"Handbooks",
+    link:"home"
 },{ 
     img:"/assets/discord.webp", 
-    name:"Discord"
+    name:"Discord",
+    link:"home"
 }
 ];

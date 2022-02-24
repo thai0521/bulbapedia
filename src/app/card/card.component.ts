@@ -10,10 +10,13 @@ export class CardComponent{
     img: string;
     @Input()
     name: string;
+    @Input()
+    link: string;
 
 
     constructor(){
         this.img ="";
         this.name= "missing description";
+        this.link="";
     }
 }

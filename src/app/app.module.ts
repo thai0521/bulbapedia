@@ -11,6 +11,8 @@ import { HomeLayoutComponent } from './buttonGroup/home-layout.component';
 import { DiscussionLayoutComponent } from './buttonGroup/discussion-layout.component';
 import { HistoryLayoutComponent } from './buttonGroup/history-layout.component';
 import { ToolsLayoutComponent } from './buttonGroup/tools-layout.component';
+import { ArchivesLayoutComponent } from './card/archives-layout.component';
+import { TitleCardComponent } from './titleCard.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { ToolsLayoutComponent } from './buttonGroup/tools-layout.component';
     HomeLayoutComponent,
     DiscussionLayoutComponent,
     HistoryLayoutComponent,
-    ToolsLayoutComponent
+    ToolsLayoutComponent,
+    ArchivesLayoutComponent,
+    TitleCardComponent
 
   ],
   imports: [

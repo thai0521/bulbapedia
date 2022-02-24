@@ -6,6 +6,7 @@ import { HomeLayoutComponent } from './buttonGroup/home-layout.component';
 import { DiscussionLayoutComponent } from './buttonGroup/discussion-layout.component';
 import { HistoryLayoutComponent } from './buttonGroup/history-layout.component';
 import { ToolsLayoutComponent } from './buttonGroup/tools-layout.component';
+import { ArchivesLayoutComponent } from './card/archives-layout.component';
 
 const routes: Routes = [
   {path: '', component:HomeLayoutComponent},
@@ -13,7 +14,8 @@ const routes: Routes = [
   {path: 'home', component: HomeLayoutComponent},
   {path: 'discussion', component: DiscussionLayoutComponent},
   {path: 'history', component: HistoryLayoutComponent},
-  {path: 'tools', component:ToolsLayoutComponent}
+  {path: 'tools', component:ToolsLayoutComponent},
+  {path: 'archives', component:ArchivesLayoutComponent}
 ];
 
 @NgModule({
