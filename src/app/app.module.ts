@@ -15,6 +15,8 @@ import { ArchivesLayoutComponent } from './card/archives-layout.component';
 import { ArchivesCardComponent } from './archivesCard.component';
 import { BulbaCastLayoutComponent } from './card/bulbacast.-layout.component';
 import { BulbacastCardComponent } from './bulbacastCard.component';
+import { HttpClientModule } from '@angular/common/http';
+import { UserInfoComponent } from './user-info/user-info.component';
 
 @NgModule({
   declarations: [
@@ -31,12 +33,14 @@ import { BulbacastCardComponent } from './bulbacastCard.component';
     ArchivesLayoutComponent,
     ArchivesCardComponent,
     BulbaCastLayoutComponent,
-    BulbacastCardComponent
+    BulbacastCardComponent,
+    UserInfoComponent
 
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
