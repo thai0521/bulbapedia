@@ -1,5 +1,6 @@
-import { Component } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 import { BulbItemModel } from "../bulb-item.model";
+import { BulbService } from "../card/bulbs.service";
 import { mock_bulb_list } from "../mock_bulb_list";
 
 @Component({
@@ -8,13 +9,20 @@ import { mock_bulb_list } from "../mock_bulb_list";
     styleUrls: ['home-layout.component.css']
 })
 
-export class HomeLayoutComponent{
+export class HomeLayoutComponent implements OnInit{
     bulbs: BulbItemModel [] = [];
 
-    constructor(){
-      for(var bulb of mock_bulb_list){
-        console.log(bulb);
-        this.bulbs.push(bulb);
-      }
+    constructor(private service:BulbService){
+    
+    }
+    
+    ngOnInit(): void {
+      console.log("Fetch Data");
+      this.service.getBulbs().subscribe(data => {
+        console.log(data);
+        for(var bulb of data){
+          this.bulbs.push(bulb);
+        }
+      });
     }
 }
