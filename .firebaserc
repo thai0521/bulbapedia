@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "bulbapedia-bdaaa"
+  },
+  "targets": {
+    "bulbapedia-bdaaa": {
+      "hosting": {
+        "bulbapedia": [
+          "bulbapedia-bdaaa"
+        ]
+      }
+    }
+  }
+}

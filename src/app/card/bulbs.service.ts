@@ -1,24 +1,24 @@
-import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { BulbItemModel } from "../bulb-item.model";
+import { AngularFireDatabase } from '@angular/fire/compat/database';
 
 @Injectable({
     providedIn:'root'
 })
 export class BulbService{
 
-    private baseUrl:string = 'https://bulbapedia-bdaaa-default-rtdb.firebaseio.com/';
-    private bulbsEndPoint:string = 'bulbs.json';
+   
 
-    constructor(private http:HttpClient){
+    constructor(private db:AngularFireDatabase){
 
     }
 
     public getBulbs(){
-        return this.http.get<BulbItemModel []>(this.baseUrl + this.bulbsEndPoint);
+        return this.db.list<BulbItemModel>("bulbs").valueChanges();
     }
 
     public getBulb(index:number){
-        return this.http.get<BulbItemModel>(this.baseUrl + 'bulbs/' + index + '.json')
+
+        
     }
 }
