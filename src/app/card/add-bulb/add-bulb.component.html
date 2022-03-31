@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="row">
+        <div class="col-8">
+            <form #postForm="ngForm" (ngSubmit)="addBulb(postForm.value)">
+
+                <div class="input-group-text">
+                    <span for="">
+                        Image Path:
+                     </span>
+                    <input type="text" class="form-control" ngModel name="img" required>
+                </div>
+                <div class="input-group-text">
+                    <span for="">
+                        Name:
+                     </span>
+                    <input type="text" class="form-control" ngModel name="name" required>
+                </div>
+                <div class="input-group-text">
+                    <span for="">
+                        Link:
+                     </span>
+                    <input type="text" class="form-control" ngModel name="link">
+                </div>
+
+                <button class="btn mt-5" type="submit" [disabled]="!postForm.valid">Add Bulb</button>
+            </form>
+        </div>
+    </div>
+</div>

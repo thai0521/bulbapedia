@@ -8,6 +8,7 @@ import { HistoryLayoutComponent } from './buttonGroup/history-layout.component';
 import { ToolsLayoutComponent } from './buttonGroup/tools-layout.component';
 import { ArchivesLayoutComponent } from './card/archives-layout.component';
 import { BulbaCastLayoutComponent } from './card/bulbacast.-layout.component';
+import { AddBulbComponent } from './card/add-bulb/add-bulb.component';
 
 const routes: Routes = [
   {path: '', component:HomeLayoutComponent},
@@ -17,7 +18,8 @@ const routes: Routes = [
   {path: 'history', component: HistoryLayoutComponent},
   {path: 'tools', component:ToolsLayoutComponent},
   {path: 'archives', component:ArchivesLayoutComponent},
-  {path: 'bulbacast', component:BulbaCastLayoutComponent}
+  {path: 'bulbacast', component:BulbaCastLayoutComponent},
+  {path: 'admin', component: AddBulbComponent}
 ];
 
 @NgModule({

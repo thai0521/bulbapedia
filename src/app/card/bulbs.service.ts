@@ -18,7 +18,10 @@ export class BulbService{
     }
 
     public getBulb(index:number){
-
         
+    }
+
+    public addBulb(bulb:BulbItemModel){
+        this.db.list<BulbItemModel>("bulbs").push(bulb);
     }
 }
