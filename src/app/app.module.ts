@@ -24,6 +24,7 @@ import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { AddBulbComponent } from './card/add-bulb/add-bulb.component';
 import { FormsModule } from '@angular/forms';
+import { AuthenticationComponent } from './auth/authentication/authentication.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { FormsModule } from '@angular/forms';
     BulbaCastLayoutComponent,
     BulbacastCardComponent,
     UserInfoComponent,
-    AddBulbComponent
+    AddBulbComponent,
+    AuthenticationComponent
   ],
   imports: [
     BrowserModule,
